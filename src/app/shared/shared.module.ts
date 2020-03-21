@@ -11,12 +11,16 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { ShellComponent } from "./shell/shell.component";
+import { LayoutModule } from "@angular/cdk/layout";
+import { RouterModule } from "@angular/router";
 
 const components = [ShellComponent];
 const modules = [
+  CommonModule,
   MatButtonModule,
   MatToolbarModule,
   MatSidenavModule,
+  LayoutModule,
   MatListModule,
   MatMenuModule,
   MatIconModule,
