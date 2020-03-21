@@ -3,11 +3,11 @@ import { NgModule } from "@angular/core";
 
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatButtonModule } from "@angular/material/button";
+import { SharedModule } from "./shared/shared.module";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MatButtonModule],
+  imports: [BrowserModule, BrowserAnimationsModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent]
 })
