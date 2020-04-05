@@ -43,3 +43,27 @@ i {
   border-radius: 50%;
   margin: 0 10px 5px;
 }
+
+@keyframes color-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    filter: hue-rotate(90deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  75% {
+    filter: hue-rotate(270deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.logo {
+  animation: color-rotate 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
