@@ -1,11 +1,5 @@
 {
-  "targets": {
-    "angular-kanban-56ef4": {
-      "hosting": {
-        "Kanban": [
-          "angular-kanban-56ef4"
-        ]
-      }
-    }
+  "projects": {
+    "default": "kanban-angular-proj"
   }
 }
