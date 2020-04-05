@@ -5,14 +5,26 @@ import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { SharedModule } from "./shared/shared.module";
 import { RouterModule } from "@angular/router";
+import { HomePageComponent } from "./home-page/home-page.component";
+import { AppRoutingModule } from "./app-routing.module";
+
+import { environment } from "../environments/environment";
+
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { AngularFireAuthModule } from "@angular/fire/auth";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomePageComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     SharedModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot([]),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

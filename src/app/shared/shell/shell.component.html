@@ -14,9 +14,9 @@
       <a mat-list-item routerLink="/kanban" (click)="drawer.close()">
         Kanban View
       </a>
-      <a mat-list-item routerLink="/customers" (click)="drawer.close()">
+      <!-- <a mat-list-item routerLink="/customers" (click)="drawer.close()">
         SSR View
-      </a>
+      </a> -->
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -30,17 +30,19 @@
       >
         <mat-icon aria-label="Side nav toggle icon"> menu </mat-icon>
       </button>
-      <span class="logo" routerLink="/"> Kanban</span>
+      <span class="logo" routerLink="/" routerLinkActive="active"
+        >🔥 Kanban</span
+      >
       <span class="fill-space"></span>
       <div *ngIf="!(isHandset$ | async)">
         <a mat-button routerLink="/kanban" (click)="drawer.close()">
-          Kanban View
+          🍱 Kanban View
         </a>
-        <a mat-button routerLink="/customers" (click)="drawer.close()">
+        <!-- <a mat-button routerLink="/customers" (click)="drawer.close()">
           SSR View
-        </a>
+        </a> -->
         <a mat-button routerLink="/login" (click)="drawer.close()">
-          Login
+          🔑 Login
         </a>
       </div>
     </mat-toolbar>
